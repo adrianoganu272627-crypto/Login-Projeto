@@ -11,21 +11,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginProjeto">
+
+        <!-- Tela de Login (Launcher principal) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Tela Principal (Acessada após o Login) -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.LoginProjeto"
             android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>
